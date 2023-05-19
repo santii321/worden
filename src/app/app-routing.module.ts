@@ -16,6 +16,23 @@ const routes: Routes = [
     path: 'welcome',
     loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
   },
+  {
+    path: 'puesto',
+    loadChildren: () => import('./puesto/puesto.module').then( m => m.PuestoPageModule)
+  },
+  {
+    path: 'servicios',
+    loadChildren: () => import('./servicios/servicios.module').then( m => m.ServiciosPageModule)
+  },
+  {
+    path: 'pagos',
+    loadChildren: () => import('./pagos/pagos.module').then( m => m.PagosPageModule)
+  },
+  {
+    path: 'sst',
+    loadChildren: () => import('./sst/sst.module').then( m => m.SstPageModule)
+  },
+  
 ];
 
 @NgModule({

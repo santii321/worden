@@ -4,10 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { WelcomePageRoutingModule } from './welcome-routing.module';
+import { PuestoPageRoutingModule } from './puesto-routing.module';
 
-import { WelcomePage } from './welcome.page';
-
+import { PuestoPage } from './puesto.page';
+import { MenuComponent } from '../components/menu/menu.component';
 import { MenuModule } from '../components/menu/menu.module';
 
 @NgModule({
@@ -15,9 +15,9 @@ import { MenuModule } from '../components/menu/menu.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    WelcomePageRoutingModule,
-    MenuModule
+    PuestoPageRoutingModule,
+    MenuModule,
   ],
-  declarations: [WelcomePage]
+  declarations: [PuestoPage]
 })
-export class WelcomePageModule {}
+export class PuestoPageModule {}
